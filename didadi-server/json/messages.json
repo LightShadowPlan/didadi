@@ -1,0 +1,35 @@
+{
+    "zh-CN" : {
+		"success": "请求成功!",
+		"error": "请求错误!",
+		"noAuth": "未授权，请求失败!",
+		"noAccess": "禁止访问!",
+		"notFound": "资源不存在!",
+		"serverError": "服务器错误，请稍后再试!",
+		"redirectToHome": "回到首页!",
+		"redirectToLogin": "登录已过期，请重新登录!",
+		"accountOrPasswordError": "账号或密码错误!"
+	},
+	"en" : {
+		"success": "Request succeeded.",
+		"error": "Request error.",
+		"noAuth": "Unauthorized, request failed.",
+		"noAccess": "No Access.",
+		"notFound": "Resource does not exist.",
+		"serverError": "Server error, please try again later.",
+		"redirectToHome": "Redirect to home page.",
+		"redirectToLogin": "Redirect to login page.",
+		"accountOrPasswordError": "Account or password is error."
+	},
+	"ja" : {
+		"success": "成功したリクエスト.",
+		"error": "リクエストエラー.",
+		"noAuth": "未承認、リクエストに失敗しました.",
+		"noAccess": "アクセスなし.",
+		"notFound": "リソースは存在しません.",
+		"serverError": "サーバーエラーです。しばらくしてからもう一度お試しください.",
+		"redirectToHome": "ホームページにリダイレクト.",
+		"redirectToLogin": "ログインページにリダイレクト.",
+		"accountOrPasswordError": "不正なアカウントまたはパスワード"
+	}
+}

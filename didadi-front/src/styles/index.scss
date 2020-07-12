@@ -1,0 +1,23 @@
+.v-index{
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+    padding: 0 10px;
+
+   .i-header{
+    height: 100px;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 20px 0;
+   } 
+   .i-container-warp{
+    height: 1000px;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 20px 0;
+   }
+   .i-footer{
+    height: 100px;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 20px 0;
+   }
+}
