@@ -1,29 +1,32 @@
 <template>
   <div id="app" ref="appBox">
-    <lang></lang>
+    <Lang></Lang>
     <div class="app-view" ref="appView">
-      <router-view></router-view>
+      <Header></Header>
+      <Main></Main>
+      <Footer></Footer>
     </div>
-    <scroll-bar :refMaps="refMaps"></scroll-bar>
   </div>
 </template>
 
 <script>
 import Lang from "@/components/lang.vue";
-import ScrollBar from "@/components/scrollBar.vue";
+import Header from "@/components/header";
+import Main from "@/components/main";
+import Footer from "@/components/footer";
 export default {
   name: "app",
   components: {
     Lang,
-    ScrollBar
+    Header,
+    Main,
+    Footer
   },
   data() {
-    return {
-      refMaps: null
-    };
+    return {};
   },
-  mounted() {
-    this.refMaps = this.$refs;
-  }
+  methods: {},
+  created() {},
+  mounted() {}
 };
 </script>

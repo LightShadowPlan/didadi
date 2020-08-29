@@ -9,34 +9,16 @@ Vue.use(VueRouter)
 
 const routes = [{
     path: '/',
-    redirect: 'index'
+    redirect: 'home'
 },
 {
-    path: '/index',
-    name: 'index',
-    component: () => import('@/views/index.vue'),
-    redirect: "home",
+    path: '/home',
+    name: 'home',
+    component: () => import('@/modules/home/home.vue'),
     meta: {
-
+        requiresAuth: false,
     },
-    children: [
-        {
-            path: '/home',
-            name: 'home',
-            component: () => import('@/modules/index/home.vue'),
-            meta: {
-                requiresAuth: false,
-            }
-        },
-    ]
-},
-{
-    path: '/admin',
-    name: 'admin',
-    component: () => import('@/views/admin.vue'),
-    meta: {
-        requiresAuth: true,
-    }
+
 },
 {
     path: '/login',
@@ -50,7 +32,7 @@ const routes = [{
 },
 {
     path: '*',
-    redirect: 'index'
+    redirect: 'home'
 }
 ]
 

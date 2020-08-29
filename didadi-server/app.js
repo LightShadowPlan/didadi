@@ -4,7 +4,6 @@ const cors = require('cors');
 const path = require('path');
 const cookieParser = require('cookie-parser'); // 解析cookie
 const logger = require('morgan');
-
 // 路由工具
 const indexRouter = require('./routes/index');
 const managementRouter = require('./routes/management');

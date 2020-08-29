@@ -9,7 +9,7 @@ import i18n from '@/i18n'
 
 import 'element-ui/lib/theme-chalk/index.css';
 import '../theme/index.css'
-import '@/styles/base.scss';
+import '@/assets/styles/base.scss';
 
 Vue.use(ElementUI);
 
@@ -17,8 +17,8 @@ Vue.use(ElementUI);
 Vue.config.productionTip = false
 
 new Vue({
-  store,
-  router,
-  i18n,
-  render: h => h(App),
+    store,
+    router,
+    i18n,
+    render: h => h(App),
 }).$mount('#app')
