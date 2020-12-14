@@ -98,6 +98,7 @@ export default {
           this.$store
             .dispatch("loginByInfo", data)
             .then(result => {
+              console.log(result);
               if (result) {
                 this.$router.push({ path: "index" });
               }

@@ -1,6 +1,6 @@
 <template>
   <div class="main clearFix">
-    <view-router></view-router>
+    <router-view></router-view>
   </div>
 </template>
 

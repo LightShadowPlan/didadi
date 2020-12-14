@@ -21,6 +21,15 @@ const routes = [{
 
 },
 {
+    path: '/music',
+    name: 'music',
+    component: () => import('@/modules/music/music.vue'),
+    meta: {
+        requiresAuth: false,
+    },
+
+},
+{
     path: '/login',
     name: 'login',
     component: () => import('@/views/login.vue'),

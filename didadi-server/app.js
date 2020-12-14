@@ -25,7 +25,8 @@ app.use(cors({
     methods: 'GET,PUT,PATCH,POST,DELETE',
     optionsSuccessStatus: 200,
     alloweHeaders: ['Conten-Type', 'Authorization'],
-    credentials: true
+    credentials: true,
+    maxAge: 1728000
 }));
 
 // 静态资源处理

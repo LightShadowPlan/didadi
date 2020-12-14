@@ -10,11 +10,9 @@ const user = {
         loginByInfo ({ commit }, data) {
             return new Promise((resolve, reject) => {
                 apiUser.loginByInfo(data).then((result) => {
-                    if (result.code === 200) {
+                    if (result.code === 201) {
                         commit('setUser', result.data)
                         commit('setLogin', true)
-                        commit('setToken', result.data.token)
-                        commit('setAuth', result.data.authority || 0)
                         resolve(result.data);
                     } else {
                         resolve(false);
@@ -29,10 +27,9 @@ const user = {
         loginByToken ({ commit }) {
             return new Promise((resolve, reject) => {
                 apiUser.loginByToken().then((result) => {
-                    if (result.code === 200) {
+                    if (result.code === 201) {
                         commit('setUser', result.data)
                         commit('setLogin', true)
-                        commit('setAuth', result.data.authority || 0)
                         resolve(result.data);
                     } else {
                         resolve(false);
@@ -46,7 +43,6 @@ const user = {
         logout ({ commit }) {
             commit('setUser', {})
             commit('setLogin', false)
-            commit('setLogin', "")
         },
     },
     mutations: {
@@ -56,9 +52,6 @@ const user = {
         setLogin (state, payload) {
             state.hasLogin = payload
         },
-        setAuth (state, payload) {
-            state.hasAuth = payload
-        },
         setToken (state, payload) {
             localStorage.userToken = payload
         },
@@ -67,9 +60,6 @@ const user = {
         getHasLogin (state) {
             return state.hasLogin
         },
-        getHasAuth (state) {
-            return state.hasAuth
-        }
     }
 }
 
